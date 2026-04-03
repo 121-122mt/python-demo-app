@@ -4,11 +4,7 @@ pipeline {
     environment {
         IMAGE = "manishtiwari123/python-app"
     }
-
-    tools {
-        sonarScanner 'sonar-scanner'
-    }
-
+    
     stages {
 
         stage('Clone') {
