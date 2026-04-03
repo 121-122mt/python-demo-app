@@ -5,6 +5,8 @@ pipeline {
         IMAGE = "manishtiwari123/python-app"
     }
 
+    stages {
+
         stage('Build') {
             steps {
                 sh 'echo "Build stage running..."'
@@ -41,5 +43,6 @@ pipeline {
                 }
             }
         }
+
     }
 }
