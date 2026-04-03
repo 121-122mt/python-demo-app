@@ -4,14 +4,6 @@ pipeline {
     environment {
         IMAGE = "manishtiwari123/python-app"
     }
-    
-    stages {
-
-        stage('Clone') {
-            steps {
-                git 'https://github.com/121-122mt/python-demo-app.git'
-            }
-        }
 
         stage('Build') {
             steps {
